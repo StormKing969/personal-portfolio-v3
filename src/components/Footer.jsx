@@ -1,13 +1,9 @@
-const date = new Date();
+import React from 'react'
 
-function Footer() {
-    return (
-        <div>
-            <p>
-                Copyright &copy; {date.getFullYear()}
-            </p>
-        </div>
-    );
+const Footer = () => {
+  return (
+    <div>Footer</div>
+  )
 }
 
-export default Footer;
+export default Footer

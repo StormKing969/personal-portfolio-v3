@@ -1,13 +1,26 @@
-import Header from "./components/Header"
-import Note from "./components/Note"
-import Footer from "./components/Footer"
+import React from 'react'
+import Header from './components/Header/Header'
+import Nav from './components/Nav'
+import About from './components/About'
+import Experience from './components/Experience'
+import Portfolio from './components/Portfolio'
+import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <Footer />
-    </div>
-  );
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App

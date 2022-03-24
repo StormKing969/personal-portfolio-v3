@@ -1,5 +1,129 @@
+@import './shared/variables';
+@import './components/header';
+@import './components/nav';
+@import './components/about';
+@import './components/experience';
+@import './components/portfolio';
+@import './components/testimonials';
+@import './components/contact';
+@import './components/footer';
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $bg-color;
+    color: $white-color;
+    line-height: 1.7;
+    background-image: url(../assets/background/bg-texture.png);
+}
+
+.container {
+    width: $large-container-width;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+section {
+    margin-top: 8rem;
+
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 3rem;
+    }
+
+    h5 {
+        text-align: center;
+        color: $light-color;
+    }
+}
+
+.text_light {
+    color: $light-color;
+}
+
+a {
+    color: $primary-color;
+    transition: $transition;
+
+    &:hover {
+        color: $white-color;
+    }
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: $primary-color;
+    padding: .75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    transition: $transition;
+
+    &:hover {
+        background: $white-color;
+        color: $bg-color;
+        border-color: transparent;
+    }
+}
+
+.btn_primary {
+    background: $primary-color;
+    color: $bg-color;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+// ========== MEDIUM DEVICES ==========
+@media screen and  (max-width: 1024px) {
+    .container {
+        width: $medium-container-width;
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+// ========== SMALL DEVICES ==========
+@media screen and  (max-width: 600px) {
+    .container {
+        width: $small-container-width;
+    }
+
+    section {
+        
+        h2 {
+            margin-bottom: 2rem;
+        }
+    }
 }
