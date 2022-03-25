@@ -60,14 +60,25 @@ header {
     font-size: .9rem;
 }
 
+// ========== MEDIUM DEVICES ==========
 @media screen and  (max-width: 1024px) {
-    .container {
-        background-color: red;
+    header {
+        height: 78vh;
     }
 
 }
 
 // ========== SMALL DEVICES ==========
 @media screen and  (max-width: 600px) {
-    
+    header {
+        height: 100vh;
+    }
+
+    .header_socials {
+        display: none;
+    }
+
+    .scroll_down {
+        display: none;
+    }
 }
