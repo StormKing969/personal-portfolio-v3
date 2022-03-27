@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href='#home' className={activeNav === '#home' ? 'active' : ''} onClick={() => setActiveNav('#home')}>
+      <a href='#home' className={activeNav === '#home' ? 'active' : ''} onClick={() => setActiveNav('#home')} onsc>
         <AiOutlineHome />
       </a>
       <a href='#about' className={activeNav === '#about' ? 'active' : ''} onClick={() => setActiveNav('#about')}>

@@ -1,13 +1,15 @@
 function TestimonialCard(props) {
     return (
-        <SwiperSlide className='testimonial'>
+        <div className='testimonial'>
           <div className='client_avatar'>
             <img src={props.image} alt='project img' />
           </div>
           <h5 className="colleague_name">{props.name}</h5>
           <small className="colleague_feedback">{props.feedback}</small>
-        </SwiperSlide>
+        </div>
     );
 }
 
 export default TestimonialCard;
+
+// NOT BEING USED DUE TO THE SWIPER JS MODULE

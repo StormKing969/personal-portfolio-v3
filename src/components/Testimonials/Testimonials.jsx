@@ -17,7 +17,12 @@ const Testimonials = () => {
       <h5>Feedback from colleagues</h5>
       <h2>Testimonial</h2>
 
-      <Swiper className='container testimonials_container' spaceBetween={50} slidesPerView={1} pagination={true} modules={[Pagination]}>
+      <Swiper className='container testimonials_container' 
+        spaceBetween={50} 
+        slidesPerView={1} 
+        pagination={{dynamicBullets: true}} 
+        loop={true}
+        modules={[Pagination]}>
         {TestimonialData.map(data => (
           <SwiperSlide className='testimonial' key={data.id}>
             <div className='client_avatar'>
